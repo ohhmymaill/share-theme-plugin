@@ -67,8 +67,8 @@ class Share_Theme_Plugin {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'PLUGIN_NAME_VERSION' ) ) {
-			$this->version = PLUGIN_NAME_VERSION;
+		if ( defined( 'share_theme_plugin_v1_0' ) ) {
+			$this->version = 'share_theme_plugin_v1_0';
 		} else {
 			$this->version = '1.0.0';
 		}
@@ -122,6 +122,10 @@ class Share_Theme_Plugin {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-share-theme-plugin-public.php';
 
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'widgets/share-theme-plugin-about-me-widget.php';
+
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'widgets/share-theme-plugin-recent-post-widget.php';
+
 		$this->loader = new Share_Theme_Plugin_Loader();
 
 	}
@@ -156,6 +160,7 @@ class Share_Theme_Plugin {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		$this->loader->add_action( 'widgets_init', $plugin_admin, 'register_widgets' );
 
 	}
 

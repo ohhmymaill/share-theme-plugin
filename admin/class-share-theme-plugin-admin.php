@@ -100,4 +100,14 @@ class Share_Theme_Plugin_Admin {
 
 	}
 
+	/**
+	 * Create our custom filter widget
+	 *
+	 * @since    1.0.0
+	 */
+	public function register_widgets() {
+		register_widget( 'Share_Theme_Plugin_About_Me_Widget' );
+		register_widget( 'Share_Theme_Plugin_Recent_Post_Widget' );
+	}
+
 }
