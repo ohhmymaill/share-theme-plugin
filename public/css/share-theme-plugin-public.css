@@ -191,6 +191,7 @@
 	display: block;
 	padding: 20px 14px 10px;
 	text-align: center;
+	font-size: 13px;
 }
 
 .sr-about-me-widget .sr-social-media {
@@ -225,7 +226,7 @@
 
 /* Recent Post Widget */
 .widget_share_theme_plugin_recent_post_widget ul li {
-	margin-top: 20px;
+	line-height: 48px;
 }
 
 .widget_share_theme_plugin_recent_post_widget ul li .post-image {
@@ -279,8 +280,6 @@
 	float: right;
 }
 
-.widget_share_theme_plugin_recent_post_widget ul li {
+.sidr .widget_share_theme_plugin_recent_post_widget ul li {
 	margin-top: 25px;
-    margin-bottom: 25px;
 }
-
