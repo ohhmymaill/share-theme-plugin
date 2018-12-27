@@ -178,18 +178,18 @@ class Share_Theme_Plugin {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
-		$this->loader->add_shortcode( "sr_dropcap", $plugin_public, "sr_dropcap", $priority = 10, $accepted_args = 2 );
-		$this->loader->add_shortcode( "sr_dropcap_2", $plugin_public, "sr_dropcap_2", $priority = 10, $accepted_args = 2 );
-		$this->loader->add_shortcode( "sr_bulleted_list", $plugin_public, "sr_bulleted_list", $priority = 10, $accepted_args = 2 );
-		$this->loader->add_shortcode( "sr_bulleted_item", $plugin_public, "sr_bulleted_item", $priority = 10, $accepted_args = 0 );
-		$this->loader->add_shortcode( "sr_icon", $plugin_public, "sr_icon", $priority = 10, $accepted_args = 2);
-		$this->loader->add_shortcode( "sr_column", $plugin_public, "sr_column", $priority = 10, $accepted_args = 2);
-		$this->loader->add_shortcode( "sr_column_one_three", $plugin_public, "sr_column_one_three", $priority = 10, $accepted_args = 0);
-		$this->loader->add_shortcode( "sr_column_one_two", $plugin_public, "sr_column_one_two", $priority = 10, $accepted_args = 0);
-		$this->loader->add_shortcode( "sr_column_two_three", $plugin_public, "sr_column_two_three", $priority = 10, $accepted_args = 0);
-		$this->loader->add_shortcode( "sr_button_with_icon", $plugin_public, "sr_button_with_icon", $priority = 10, $accepted_args = 4);
-		$this->loader->add_shortcode( "sr_button", $plugin_public, "sr_button", $priority = 10, $accepted_args = 3);
-		$this->loader->add_shortcode( "sr_progress_bar", $plugin_public, "sr_progress_bar", $priority = 10, $accepted_args = 3);
+		$this->loader->add_shortcode( "sr_dropcap", $plugin_public, "srtp_dropcap", $priority = 10, $accepted_args = 2 );
+		$this->loader->add_shortcode( "sr_dropcap_2", $plugin_public, "srtp_dropcap_2", $priority = 10, $accepted_args = 2 );
+		$this->loader->add_shortcode( "sr_bulleted_list", $plugin_public, "srtp_bulleted_list", $priority = 10, $accepted_args = 2 );
+		$this->loader->add_shortcode( "sr_bulleted_item", $plugin_public, "srtp_bulleted_item", $priority = 10, $accepted_args = 0 );
+		$this->loader->add_shortcode( "sr_icon", $plugin_public, "srtp_icon", $priority = 10, $accepted_args = 2);
+		$this->loader->add_shortcode( "sr_column", $plugin_public, "srtp_column", $priority = 10, $accepted_args = 2);
+		$this->loader->add_shortcode( "sr_column_one_three", $plugin_public, "srtp_column_one_three", $priority = 10, $accepted_args = 0);
+		$this->loader->add_shortcode( "sr_column_one_two", $plugin_public, "srtp_column_one_two", $priority = 10, $accepted_args = 0);
+		$this->loader->add_shortcode( "sr_column_two_three", $plugin_public, "srtp_column_two_three", $priority = 10, $accepted_args = 0);
+		$this->loader->add_shortcode( "sr_button_with_icon", $plugin_public, "srtp_button_with_icon", $priority = 10, $accepted_args = 4);
+		$this->loader->add_shortcode( "sr_button", $plugin_public, "srtp_button", $priority = 10, $accepted_args = 3);
+		$this->loader->add_shortcode( "sr_progress_bar", $plugin_public, "srtp_progress_bar", $priority = 10, $accepted_args = 3);
 
 	}
 

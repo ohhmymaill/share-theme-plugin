@@ -101,7 +101,7 @@ class Share_Theme_Plugin_Public {
 	}
 
 
-	function sr_dropcap( $atts) {
+	function srtp_dropcap( $atts) {
 	    $args = shortcode_atts(
 	        array(
 	            'color'   => '#1f1f1f',
@@ -117,7 +117,7 @@ class Share_Theme_Plugin_Public {
 	    return '';
 	}
 
-	function sr_dropcap_2 ( $atts) {
+	function srtp_dropcap_2 ( $atts) {
 	    $args = shortcode_atts(
 	        array(
 	            'color'   => '#eaeaea',
@@ -133,7 +133,7 @@ class Share_Theme_Plugin_Public {
 	    return '';
 	}
 
-	function sr_bulleted_list($atts, $content="null") {
+	function srtp_bulleted_list($atts, $content="null") {
 		$args = shortcode_atts(
 	        array(
 	            'color'   => '#1f1f1f',
@@ -142,7 +142,7 @@ class Share_Theme_Plugin_Public {
 	        $atts
 	    );
 
-		$unicode = FontAwesome::getIcon($args['icon']);
+		$unicode = ShareThemePluginFontAwesome::getIcon($args['icon']);
 
 		$style = '<style type="text/css">
 					.sr-bulleted-'.$args['icon'].' li::before {
@@ -174,11 +174,11 @@ class Share_Theme_Plugin_Public {
 		return $style.'<ul class="sr-bulleted-'.$args['icon'].'">' .do_shortcode($content) . '</ul>';
 	}
 
-	function sr_bulleted_item($atts, $content="null") {
+	function srtp_bulleted_item($atts, $content="null") {
 		return '<li>'.$content.'</li>';
 	}
 
-	function sr_icon($atts) {
+	function srtp_icon($atts) {
 		$args = shortcode_atts(
 	        array(
 	            'color'   => '#1f1f1f',
@@ -192,23 +192,23 @@ class Share_Theme_Plugin_Public {
 	}
 	
 
-	function sr_column($atts, $content="null") {
+	function srtp_column($atts, $content="null") {
 		return '<div class="sr-column">'.do_shortcode($content).'</div>';
 	} 
 
-	function sr_column_one_three($atts, $content="null") {
+	function srtp_column_one_three($atts, $content="null") {
 		return '<div class="sr_column_one_three">'.do_shortcode($content).'</div>';
 	}
 
-	function sr_column_one_two($atts, $content="null") {
+	function srtp_column_one_two($atts, $content="null") {
 		return '<div class="sr_column_one_two">'.do_shortcode($content).'</div>';
 	}
 
-	function sr_column_two_three($atts, $content="null") {
+	function srtp_column_two_three($atts, $content="null") {
 		return '<div class="sr_column_two_three">'.do_shortcode($content).'</div>';
 	}
 
-	function sr_button_with_icon($atts, $content="null") {
+	function srtp_button_with_icon($atts, $content="null") {
 		$args = shortcode_atts(
 	        array(
 	            'color'   => '#1f1f1f',
@@ -223,7 +223,7 @@ class Share_Theme_Plugin_Public {
 	}
 
 
-	function sr_button($atts, $content="null") {
+	function srtp_button($atts, $content="null") {
 		$args = shortcode_atts(
 	        array(
 	            'color'   => '#1f1f1f',
@@ -237,7 +237,7 @@ class Share_Theme_Plugin_Public {
 	}
 
 
-	function sr_progress_bar($atts) {
+	function srtp_progress_bar($atts) {
 
 		$args = shortcode_atts(
 	        array(

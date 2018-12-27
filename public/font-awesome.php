@@ -1,6 +1,6 @@
 <?php
 
-class FontAwesome {
+class ShareThemePluginFontAwesome {
 	public static function getIcon($key) {
 		$icons =   array(
 			'fa-glass'                               => '\f000',
